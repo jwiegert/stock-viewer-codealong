@@ -57,6 +57,8 @@ app = dash.Dash(__name__, external_stylesheets=stylesheets,
     meta_tags=[dict(name="viewport", content="width=device-width, initial-scale=1.0")]
 )
 
+# Needed for Heroku to connect to
+server = app.server
 
 # Define the layout for our "app"
 # html.H1 = header 1, main title
